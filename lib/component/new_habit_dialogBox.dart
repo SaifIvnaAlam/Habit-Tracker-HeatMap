@@ -4,11 +4,14 @@ class NewHabitBox extends StatelessWidget {
   final controller;
   final VoidCallback onSave;
   final VoidCallback onCancle;
+
+  final String hitText;
   const NewHabitBox(
       {Key? key,
       required this.onCancle,
       required this.controller,
-      required this.onSave})
+      required this.onSave,
+      required this.hitText})
       : super(key: key);
 
   @override
@@ -18,12 +21,15 @@ class NewHabitBox extends StatelessWidget {
       content: TextField(
           controller: controller,
           style: const TextStyle(color: Colors.white),
-          decoration: const InputDecoration(
-            enabledBorder: OutlineInputBorder(
+          decoration: InputDecoration(
+            hintText: hitText,
+            hintStyle: const TextStyle(color: Colors.white),
+            enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.white),
             ),
-            focusedBorder:
-                OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+            focusedBorder: const OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.white),
+            ),
           )),
       actions: [
         MaterialButton(
