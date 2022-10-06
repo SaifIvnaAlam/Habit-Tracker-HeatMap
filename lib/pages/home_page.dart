@@ -11,6 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _newHabitcontrollar = TextEditingController();
   List todaysHabitList = [
     ["Morning Walk", false],
     ["Read Book", false],
@@ -23,13 +24,31 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+//NewHabit Box functions
+  void newHabitSave() {
+    setState(() {
+      todaysHabitList.add([_newHabitcontrollar.text, false]);
+    });
+    Navigator.of(context).pop();
+    _newHabitcontrollar.clear();
+  }
+
+  //on new habit cancle
+  void cancleNewHabit() {
+    Navigator.of(context).pop();
+    _newHabitcontrollar.clear();
+  }
+
 //Create new habit
   void createHabit() {
     setState(() {
       showDialog(
           context: context,
           builder: (context) {
-            return NewHabitBox();
+            return NewHabitBox(
+                onSave: newHabitSave,
+                controller: _newHabitcontrollar,
+                onCancle: cancleNewHabit);
           });
     });
   }
