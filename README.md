@@ -1,6 +1,6 @@
 # Habit Tracker v2
 
-A very simple basic flutter project made with pure flutter. This is very  useful in term of creating new habit and keepint track of your habit activity
+A very simple basic flutter project made with pure flutter. This is very  useful in term of creating new habit and keeping track of your habit activity
 
 ## About Project
 
