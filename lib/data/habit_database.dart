@@ -35,6 +35,8 @@ class HabitDatabase {
     _myBox.put(todaysDateFormatted(), todaysHabitList);
 
     _myBox.put("CURRENT_HABIT_LIST", todaysHabitList);
+    calculateHabitPercentages();
+    loadHeatMap();
   }
 
   void calculateHabitPercentages() {

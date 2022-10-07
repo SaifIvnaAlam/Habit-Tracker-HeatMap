@@ -1,4 +1,4 @@
-//return todays date formated
+// //return todays date formated
 String todaysDateFormatted() {
   var dateTimeObject = DateTime.now();
   String year = dateTimeObject.year.toString();
@@ -32,7 +32,7 @@ DateTime createDateTimeObject(String yyyymmdd) {
 //Conver DateTIme oBject To String yyymmdd
 
 String convertDateTimeToString(DateTime dateTime) {
-  String year = dateTime.toString();
+  String year = dateTime.year.toString();
 
   String month = dateTime.month.toString();
 
