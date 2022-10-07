@@ -6,13 +6,11 @@ final _myBox = Hive.box("Habit_Database");
 class HabitDatabase {
   List todaysHabitList = [];
   Map<DateTime, int> heatMapDataSet = {};
-
   //create initial default data
   void createDefaultData() {
     todaysHabitList = [
       ["Run", false],
       ["Walk", false],
-      ["Code", false],
     ];
 
     _myBox.put("START_DATE", todaysDateFormatted());
@@ -42,15 +40,17 @@ class HabitDatabase {
   void calculateHabitPercentages() {
     int countCompleted = 0;
     for (int i = 0; i < todaysHabitList.length; i++) {
-      if (todaysHabitList[i][1] = true) {
+      if (todaysHabitList[i][1] == true) {
         countCompleted++;
       }
     }
 
-    String percent = todaysHabitList.isNotEmpty
+    String percent = todaysHabitList.isEmpty
         ? '0.0'
         : (countCompleted / todaysHabitList.length).toStringAsFixed(1);
 
+    // key: "PERCENTAGE_SUMMARY_yyyymmdd"
+    // value: string of 1dp number between 0.0-1.0 inclusive
     _myBox.put("PERCENTAGE_SUMMARY_${todaysDateFormatted()}", percent);
   }
 
