@@ -1,16 +1,9 @@
-# habit_tracker_v2
+# Habit Tracker v2
 
-A new Flutter project.
+A very simple basic flutter project made with pure flutter. This is very  useful in term of creating new habit and keepint track of your habit activity
 
-## Getting Started
+## About Project
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Create List of habits that you want to work on,
+- Track you habit activity,
+- See the progress on a monthly based Heatmap to keep you motivated ;
