@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         floatingActionButton: MyFloatingActionButton(onPressed: createHabit),
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Color(0xff222222),
         body: ListView(children: [
           MonthlySummary(
             datasets: db.heatMapDataSet,

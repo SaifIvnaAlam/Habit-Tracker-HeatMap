@@ -17,23 +17,22 @@ class NewHabitBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Color(0xffFFFFFF),
       content: TextField(
           controller: controller,
           style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
             hintText: hitText,
-            hintStyle: const TextStyle(color: Colors.white),
             enabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.white),
+              borderSide: BorderSide(color: Color(0xff222222)),
             ),
             focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.white),
+              borderSide: BorderSide(color: Color(0xff222222)),
             ),
           )),
       actions: [
         MaterialButton(
-          color: Colors.black,
+          color: Color(0xff84DCC6),
           onPressed: onSave,
           child: const Text(
             'Save',
@@ -41,7 +40,7 @@ class NewHabitBox extends StatelessWidget {
           ),
         ),
         MaterialButton(
-          color: Colors.black,
+          color: Color(0xff4B4E6D),
           onPressed: onCancle,
           child: const Text(
             'Cancle',

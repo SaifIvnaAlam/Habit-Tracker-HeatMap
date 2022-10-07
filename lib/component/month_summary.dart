@@ -19,7 +19,7 @@ class MonthlySummary extends StatelessWidget {
           endDate: DateTime.now().add(const Duration(days: 0)),
           datasets: datasets,
           colorMode: ColorMode.color,
-          defaultColor: Colors.grey[200],
+          defaultColor: Color(0xff95A3B3),
           textColor: Colors.white,
           showColorTip: false,
           showText: true,
