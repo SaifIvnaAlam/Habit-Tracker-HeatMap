@@ -20,7 +20,7 @@ class HabitTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(10.0),
       child: Slidable(
         endActionPane: ActionPane(
           motion: const StretchMotion(),
@@ -40,14 +40,21 @@ class HabitTile extends StatelessWidget {
           ],
         ),
         child: Container(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(15),
           decoration: BoxDecoration(
-              color: const Color(0xff95A3B3),
+              color: const Color(0xff4b4e6d),
               borderRadius: BorderRadius.circular(10)),
           child: Row(
             children: [
-              Checkbox(value: habitCompleted, onChanged: onchanged),
-              Text(habitName),
+              Checkbox(
+                  value: habitCompleted,
+                  onChanged: onchanged,
+                  hoverColor: Colors.white),
+              Text(
+                habitName,
+                style: const TextStyle(
+                    color: Color(0xffFFFFFF), fontWeight: FontWeight.w500),
+              ),
             ],
           ),
         ),

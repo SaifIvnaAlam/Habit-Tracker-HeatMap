@@ -9,9 +9,11 @@ class MyFloatingActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Color(0xff84DCC6),
+      backgroundColor: const Color(0xff84DCC6),
       onPressed: onPressed,
-      child: Icon(Icons.add),
+      child: const Icon(
+        Icons.add,
+      ),
     );
   }
 }
