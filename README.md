@@ -34,7 +34,9 @@ A Flutter-based app that helps users keep track of their habits and goals, offer
 
 ---
 
-> `Dart` > `Flutter` > `Hive database`
+> `Dart` 
+> `Flutter`
+> `Hive database`
 
 ---
 
