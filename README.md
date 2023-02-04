@@ -44,12 +44,12 @@ A Flutter-based app that helps users keep track of their habits and goals, offer
 
 ---
 
-- Fist clone the repo
+- First clone the repo
   > `git clone https://github.com/SaifIvnaAlam/Habit-Tracker-HeatMap.git`
 - Open project in IDE
 
 - Get necessary packages
   > `flutter pub get`
 - Run project
-
-Thank you and may the force be with you ❤️
+---
+Made with ❤️ by Saif
