@@ -26,7 +26,7 @@ A Flutter-based app that helps users keep track of their habits and goals, offer
 
 ---
 
-![habittracker](https://user-images.githubusercontent.com/73099787/216770428-a914ec8a-a1ef-41c9-aa81-799d0e3b0acc.png)
+![Habiit tracker](https://user-images.githubusercontent.com/73099787/216776059-8337cf86-f91d-49b0-b630-adadc7011f68.png)
 
 ---
 
